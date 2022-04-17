@@ -1,0 +1,133 @@
+@import url(http://fonts.googleapis.com/css?family=Chivo:400,300,600,700);
+
+body {
+    background-color: #94E4FF;
+    height: 100vh;
+    font-family: 'Chivo', sans-serif;
+    font-weight: 700;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+a, a:hover {
+    color: black;
+    text-decoration: none;
+    cursor: default;
+}
+
+.row {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.canvasContainer {
+    width: fit-content;
+    height: fit-content;
+    block-size: fit-content;
+    position: relative;
+    display: none;
+}
+
+#title {
+    font-size: 6em;
+    text-align: center;
+}
+
+.button {
+    font-size: 3em;
+    background-color: #B7BEFF;
+    padding: 30px 60px;
+    max-width: 400px;
+    max-height: 200px;
+    border-radius: 100px;
+    border: 4px solid black;
+    text-align: center;
+    transition: transform 100ms ease-out, background-color 100ms;
+}
+
+.button:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+    background-color: #A4ACF5;
+}
+
+.fadeout {
+    opacity: 0;
+    transition: opacity .5s ease-in;
+}
+
+#sketchCanvas {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    z-index: -1;
+}
+
+.selfOnTop {
+    justify-self:first baseline;
+}
+
+#close {
+    height: 40px;
+    width: 40px;
+    position: absolute;
+    right: -20px;
+    top: -20px;
+    border-radius: 50%;
+    background-color: #F15BB5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: solid 4px black;
+    transition: transform 100ms ease-out, background-color 100ms;
+}
+
+#close:hover {
+    transform: scale(1.1);
+    background-color: #f576c2;
+}
+
+.gameButton {
+    position: absolute;
+    left: -40px;
+    height: 40px;
+    border-radius: 40px;
+    line-height: 40px;
+    padding: 10px 40px;
+    font-size: 20px;
+    cursor: default;
+    border: solid 4px black;
+    transition: transform 100ms ease-out, background-color 100ms;
+}
+#restart {
+    top: 75%;
+    background-color: #B7BEFF;
+}
+
+#restart:hover {
+    transform: scale(1.1);
+    background-color: #d0d4ff;
+}
+
+#download {
+    top: 60%;
+    background-color: #FEFFB7;
+}
+
+#download:hover {
+    transform: scale(1.1);
+    background-color: #fbfcce;
+}
