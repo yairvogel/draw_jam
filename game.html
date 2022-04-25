@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="index.css" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.1/p5.js"></script>
     <script src="https://unpkg.com/ml5@latest/dist/ml5.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@2.0.1/dist/tf.min.js"></script>
   </head>
   <body>
     <div class="container">
@@ -17,6 +18,11 @@
           <div id="download" class="gameButton">Download art</div>
       </div>
     </div>
+    <script>
+        let classifier;
+        (async () => {classifier = await tf.loadLayersModel('modelv2/model.json')})();
+    </script>
+    <script type="text/javascript" src="rdp.js"></script>
     <script type="text/javascript" src="game.js"></script>
   </body>
 </html>
