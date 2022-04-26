@@ -3,26 +3,26 @@ function argmax(array) {
 }
 
 const classes = [
-  "truck",
-  "tractor",
-  "octopus",
-  "angel",
-  "radio",
-  "barn",
-  "scorpion",
-  "hand",
-  "crab",
-  "helicopter",
-  "paintbrush",
-  "sheep",
-  "postcard",
-  "flower",
-  "toothpaste",
-  "swan",
-  "strawberry",
-  "chair",
-  "whale",
-  "ambulance",
+    'bee',
+    'book',
+    'radio',
+    'lion',
+    'paintbrush',
+    'rifle',
+    'hedgehog',
+    'pineapple',
+    'key',
+    'squirrel',
+    'sheep',
+    'bicycle',
+    'lantern',
+    'toothbrush',
+    'spider',
+    'parrot',
+    'chair',
+    'stove',
+    'rabbit',
+    'cactus'
 ];
 let sketchRnn;
 let sketchRnns;
@@ -89,6 +89,7 @@ let prevX, prevY;
 setup = () => {
   cnv = createCanvas(window.innerWidth * 0.9, window.innerHeight * 0.8);
   cnv.parent("canvasContainer");
+  document.getElementById('canvasContainer').style.display = 'block';
   startLine(width / 2, height / 2);
   sketchRnns = [classes.map(_ => {})];
 

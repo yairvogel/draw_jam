@@ -39,6 +39,7 @@ a, a:hover {
     height: fit-content;
     block-size: fit-content;
     position: relative;
+    display: none;
 }
 
 #title {
