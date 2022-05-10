@@ -113,13 +113,17 @@ a, a:hover {
     border: solid 4px black;
     transition: transform 100ms ease-out, background-color 100ms;
 }
+
+.gameButton:hover {
+    transform: scale(1.1);
+}
+
 #restart {
     top: 75%;
     background-color: #B7BEFF;
 }
 
 #restart:hover {
-    transform: scale(1.1);
     background-color: #d0d4ff;
 }
 
@@ -129,6 +133,11 @@ a, a:hover {
 }
 
 #download:hover {
-    transform: scale(1.1);
     background-color: #fbfcce;
+}
+
+#turn {
+    top: -30px;
+    left: 40%;
+    background-color: #B5FFCC;
 }
